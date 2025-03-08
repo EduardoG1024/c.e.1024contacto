@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        body{
+            background-image: url('img/pexels-cottonbro-4125611.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 600px;
+            height: 700px;
+            border: 2px solid #686868;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: transparent;
+            backdrop-filter: blur(8px);
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        input{
+            border-radius: 5px;
+            align-self: center;
+            width: 200px;
+            height: 30px;
+            background-color: transparent;
+            border: 2px solid #fff;
+            text-align: center;
+            color: #fff;
+        }
+        textarea{
+            border-radius: 5px;
+            border: 2px solid #fff;
+            background-color: transparent;
+            text-align: center;
+            color: #fff;
+        }
+        button{
+            width: 100px;
+            height: 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+        }
+        label{
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h2{
+            color: #fff;
+            font-size: 60px;
+            font-family:'Courier New', Courier, monospace;
+            margin-bottom: 1px;
+            margin-top: 10px;
+        }
+        h4{
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+            margin-bottom: 50px;
+        }
+        hr{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>C.E.1024</h2>
+        <h4>contacto</h4>
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="07afb1c7-429c-4a56-9741-cb05fc233347">
+
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" name="name" id="nombre" placeholder="Nombre" required><br>
+
+            <label for="correo">Correo:</label><br>
+            <input type="email" name="email" id="correo" placeholder="Correo" required><br>
+
+            <label for="texto">Comentario:</label><br>
+            <textarea id="texto" name="textarea" placeholder="Comentario" cols="50" rows="10" required></textarea><br>
+
+            <hr>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
